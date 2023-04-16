@@ -89,7 +89,7 @@ const SearchBooks = () => {
     const [savedBookId, setSavedBookId] = useState(null);
   
     // Define the mutation using useMutation()
-    const [saveBookMutation, { loading, error }] = useMutation(SAVE_BOOK);
+    const [saveBookMutation, { loading, error }] = useMutation(saveBook);
   
     // Define the handleSaveBook() function
     const handleSaveBook = async (bookId) => {
